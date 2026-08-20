@@ -23,12 +23,28 @@ graph TD
 * **Orchestration:** LangGraph (State Machine, Multi-Agent Workflow)
 * **Inference:** Ollama (Local execution of Qwen 2.5 32B for deterministic JSON parsing)
 * **Infrastructure:** Docker, containerized for cloud-native deployment
+* **Evaluations:** Promptfoo (Deterministic LLM assertion testing)
 
 ## 🚀 Architectural Decisions & Tradeoffs
 
 1. **Deterministic API Contracts over Chat:** Raw LLMs are highly non-deterministic. To integrate AI into a production system, the API layer must be strictly typed. This project utilizes Pydantic models to define the exact required schema (e.g., `EvaluationResponse`), forcing the LLM to adhere to enterprise API standards rather than returning conversational markdown.
 2. **The "Critique Node" Governance Loop:** Relying on a single LLM pass for decision-making introduces massive risk (hallucinations). I implemented a multi-agent loop where a secondary `Critique Agent` audits the `Evaluator Agent's` output against the ground-truth resume data. If a hallucinated skill is detected, the graph routes back to the Evaluator with specific correction feedback (capped at 3 retries to prevent runaway compute costs).
 3. **Local Inference for Data Privacy:** Designed to process highly sensitive PII (Personally Identifiable Information). By utilizing a local inference server (Ollama/Qwen) rather than an external API, candidate data never leaves the host infrastructure, ensuring immediate compliance with GDPR and data residency constraints.
+
+## 🧪 Eval-Driven Development (Test-Driven AI)
+
+This project treats AI prompts as code. Before any prompt is integrated into the LangGraph state machine, its output is mathematically proven to adhere to strict JSON schemas to prevent pipeline parsing errors. 
+
+**Evaluation Infrastructure:**
+* `promptfooconfig.yaml`: The core evaluation suite defining the LLM provider and the Javascript validation assertions.
+* `prompts/`: Directory containing isolated, version-controlled system prompts (e.g., `extractor.txt`).
+* `data/`: Directory containing sanitized, mock unstructured resumes used as test payloads (e.g., `resume_sample.txt`).
+
+**To run the LLM evaluations locally:**
+Ensure `promptfoo` is installed globally (`npm install -g promptfoo`) and execute:
+```bash
+promptfoo eval
+```
 
 ## 🛠 Local Setup & Installation
 
