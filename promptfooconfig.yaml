@@ -1,0 +1,40 @@
+description: "Agentic ATS Matcher - Extractor Node Eval (Local Qwen)"
+
+# Link to the prompt template
+prompts:
+  - file://prompts/extractor.txt
+
+# Pointing to your local Ollama instance running Qwen 2.5 32B
+providers:
+  - id: ollama:chat:qwen2.5:32b
+    config:
+      apiBaseUrl: 'http://localhost:11434'
+      temperature: 0.0 # Strict zero temperature for deterministic JSON extraction
+
+# Test scenarios and assertions
+tests:
+  - description: "Parse Principal AI Systems Architect Resume"
+    vars:
+      # promptfoo will inject the text of your resume from this file into the prompt
+      resume_text: file://data/resume_sample.txt 
+    assert:
+      # 1. Hard check that the LLM returned valid JSON
+      - type: is-json
+
+      # 2. Verify the LLM correctly extracted your name
+      - type: javascript
+        value: |
+          const data = JSON.parse(output);
+          return data.candidate_name === 'Larisa Pozhilova';
+
+      # 3. Verify the skills array exists and is populated
+      - type: javascript
+        value: |
+          const data = JSON.parse(output);
+          return Array.isArray(data.skills) && data.skills.length > 0;
+
+      # 4. Verify the LLM didn't truncate your work history (checks for at least 3 roles)
+      - type: javascript
+        value: |
+          const data = JSON.parse(output);
+          return Array.isArray(data.work_experience) && data.work_experience.length >= 3;
