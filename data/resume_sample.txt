@@ -1,0 +1,104 @@
+LARISA POZHILOVA
+
+Principal AI Systems Architect | Applied AI & Multi-Agent Orchestration
+Portland, OR | larisa.pozhilova@gmail.com | linkedin.com/in/larisapozhilova | github.com/larisa-pozhilova
+PROFESSIONAL SUMMARY
+
+Strategic Solution Architect and Technical Leader with over 20 years of experience designing secure, high-throughput distributed systems for Fortune 500 enterprises (Adobe, T-Mobile, Nike, Trans>
+
+As a Certified Enterprise Scrum Master (2009) and active Executive Performance Coach (ICF-PCC track, 250+ hours), I bring a distinct advantage to applied engineering. I excel at problem decompos>
+TECHNICAL COMPETENCIES
+
+    Applied AI & Orchestration: Multi-Agent Workflows (LangGraph), Local LLM Configuration & Management, Deterministic Evaluation Harnesses, AI-Augmented Automation (Claude, Cursor).
+
+    Enterprise Architecture & Scale: High-Throughput Distributed Systems, Cloud-Native Infrastructure (K8s, Docker, IaC), Zero-Trust Security, Microservices (Spring Boot), Advanced CI/CD Governa>
+
+    Organizational Leadership: Forward Deployed Discovery, Executive Stakeholder Alignment, Capacity Building, Scaled Agile Delivery (SAFe), Technical Debt Remediation.
+
+PROFESSIONAL EXPERIENCE
+
+Independent AI Researcher | June 2025 – Present
+Portland, OR
+
+    Architected and currently maintain a high-performance compute environment (Debian Linux, custom kernel optimizations, NVIDIA RTX 5090) dedicated to local AI inference, ensuring data privacy >
+
+    Designed advanced multi-agent orchestration frameworks and local LLM deployments to test the limits of AI-assisted software development.
+
+    Built a local codebase retrieval state machine utilizing LangGraph, Python, and Qdrant vector storage to enable complex, context-aware AI interactions.
+
+    Engineered a custom Model Context Protocol (MCP) server to streamline direct LLM integrations with local developer environments.
+
+Akraya, Inc. / Adobe Enterprise Contracting | December 2024 – Present
+Senior Software Engineer 3 (Platform Architect) – Marketo Platform | Portland, OR
+
+    Directed cross-functional security architecture for the Marketo Asset Platform v2, partnering with global engineering teams to embed Adobe's enterprise ABAC standards. Ensured 100% backward >
+
+    Pioneered the use of AI-agent architectures as a virtual engineering team to exponentially scale delivery capacity. Compressed a complex, multi-month enterprise security integration solo int>
+
+    Architected and deployed a production-grade AI evaluation harness and custom Claude enterprise integrations for quality governance. Engineered deterministic validation loops (including mutat>
+
+    Executed an AI-accelerated technical debt remediation strategy across a 300,000+ LOC enterprise distributed system. Programmatically resolved complex dependency trees and mitigated software >
+
+    Established cross-functional engineering governance by authoring comprehensive architectural standards and enforcing automated CI/CD quality gates, successfully adopted by 4 distinct enginee>
+
+Confidence Reset Coaching | April 2024 – Present
+Executive Agile Coach & Organizational Design Consultant | Portland, OR
+
+    Delivered 250+ hours of structured executive performance coaching, specializing in the transition of high-functioning technical experts into resilient organizational leaders. Developed frame>
+
+    Architected enterprise alignment frameworks that reduced technical decision-making cycle time by 40%. Institutionalized operational governance, accountability contracts, and advanced agile r>
+
+    Formalized advanced organizational development methodologies (currently on track for the ICF Professional Certified Coach [PCC] credential). Drove strategic execution and enterprise OKR alig>
+
+Nortal US | February 2022 – April 2024
+Principal Software Engineer & Project Delivery Manager | Kirkland, WA
+
+    Directed enterprise delivery and organizational restructuring for Nortal's most complex, large-scale programs (including T-Mobile and Amazon). Restructured a 40+ person engineering unit into>
+
+    Governed strategic release pipelines and technical alignment, partnering directly with Senior Solution Architects and C-suite leadership to bridge low-level design with cross-functional exec>
+
+    Navigated high-stakes corporate ecosystems to drive strategic alignment between engineering, product, and key client stakeholders. Provided stabilizing leadership and conflict resolution dur>
+
+TransUnion | 2018 – 2022
+Lead Software Engineer – Platform & DevOps | Portland, OR
+
+    Directed the architectural scaling and enterprise integration of the core iovation fraud prevention platform following its strategic acquisition by TransUnion. Architected high-throughput, l>
+
+    Architected and delivered mission-critical, high-security data infrastructure for federal law enforcement (FBI). Enforced strict government-grade security protocols and data governance stand>
+
+    Spearheaded enterprise-wide platform modernization, orchestrating the migration of legacy microservices to a secure, cloud-native Kubernetes (K8s) and Docker infrastructure with Spring Boot >
+
+    Championed the enterprise adoption of the Scaled Agile Framework (SAFe), aligning cross-functional engineering pods with strategic business objectives.
+
+Populus Group, LLC (Enterprise Clients: Nike, PayPal) | 2014 – 2017
+Senior Software Engineer – Cloud Platform | San Francisco, CA / Portland, OR
+
+    Championed enterprise architecture discovery and business domain mapping for the Nike Plus Invitations ecosystem, designing the foundational business architecture blueprint adopted organizat>
+
+    Architected the structural refactoring and reliability overhaul for PayPal's global push notification platform without prior mandate, fundamentally elevating resilience. Engineered and insti>
+
+    Drove rapid-response enterprise data governance by architecting an automated GDPR compliance solution for Nike, prototyping a Python-based classification engine within a 24-hour window.
+
+    Navigated enterprise governance by successfully defending a strategic platform modernization initiative before the Architecture Review Board, independently executing the migration to target->
+
+Genscape, Luxoft, EMCG | August 2005 – August 2013
+Senior Java Software Engineer | Multiple Locations
+
+    Designed early distributed systems, CI/CD pipelines, and enterprise integrations (Apache Camel, JMS).
+
+    Implemented foundational DevOps practices (Bamboo, Maven, Ant) and monitoring solutions for real-time data systems that evolved into modern SRE patterns.
+
+EDUCATION & CERTIFICATIONS
+
+    Yale School of Management - Women's Leadership Program, Executive Education
+
+    Novosibirsk State University (NSU) - Bachelor of Science, Computer Science
+
+    ICF Professional Certified Coach (PCC) - In Progress (Expected 2026, 250+ Hours Logged)
+
+    Certified ScrumMaster (CSM) - Scrum Alliance (Since 2009)
+
+    Oracle Certified Associate - Java SE 7 Programmer
+
+
+
